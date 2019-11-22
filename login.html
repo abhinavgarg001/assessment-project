@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
+     <style>
+       .section{
+        background:url('background.jpeg') no-repeat;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.7;
+            background-size: cover;
+            position: relative;
+            
+       }
+       #text{
+           color:#000;
+       }
+       #text2{
+           color: cyan;
+       }
+    </style>
+   
+   </head>
+  <body>
+     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+         <!-- Brand--> 
+         <a class="navbar-brand" href="index.html">
+           <img src="logo.png" width="350px" height="85px">
+         </a>
+       
+         <!-- Links -->
+         <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                 <a class="nav-link" href="index.html" id="navbardrop">
+                  Check Weather
+                 </a>
+                
+               </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="map.html" id="navbardrop">
+                  Map
+                 </a>
+                
+               </li>
+          
+          
+       
+           <!-- Dropdown -->
+           <li class="nav-item">
+             <a class="nav-link" href="signup.html" id="navbardrop">
+               Sign up
+             </a>
+            
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="login.html" id="navbardrop">
+                 Log in
+               </a>
+             </li>
+           <!-- <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Lighting 
+             </a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Wall lights</a>
+               <a class="dropdown-item" href="#">Ceiling lights</a>
+               <a class="dropdown-item" href="#">Outdoor lights</a>
+             </div>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Shop 
+             </a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Cart</a>
+               <a class="dropdown-item" href="#">Wishlist</a>
+             </div>
+           </li> -->
+           <li class="nav-item">
+               <a class="nav-link" href="contact.html" id="navbardrop"
+               >
+                 Contact Us
+               </a>
+              
+             </li>
+           <li>
+           <form class="form-inline" action="/action_page.php">
+           <input class="form-control mr-sm-2" type="text" placeholder="Search">
+           <button class="btn btn-secondary" type="submit">Search</button>
+         </form>
+       </li>
+       
+         </ul>
+       </nav>
+       <section class="container-fluid bg sections">
+            <section class="row justify-content-center">
+                <section class="col-12 col-sm-6 col-md-3">
+                        <form class="form-container">
+                                <div class="form-group">
+                                        <label for="exampleInputPassword1">UserName</label>
+                                        <input type="text" class="form-control" id="exampleInputPassword1" placeholder="Enter Name">
+                                    </div>
+                        
+                                 <div class="form-group">
+                                    <label for="exampleInputEmail1">Email address</label>
+                                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                 </div>
+                                 <div class="form-group">
+                                   <label for="exampleInputPassword1">Password</label>
+                                   <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                </div>
+                                <div class="form-check">
+                                   <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                   <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block">Log In</button>
+                        </form>
+                </section>
+              </section>
+        </section>
+
+
+
+
+
+
+
+    </body>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</html>

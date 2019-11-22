@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
+     <style>
+       .section{
+        background:url('background.jpeg') no-repeat;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.7;
+            background-size: cover;
+            position: relative;
+            
+       }
+       #text{
+           color:#000;
+       }
+       #text2{
+           color: cyan;
+       }
+    </style>
+   
+   </head>
+  <body>
+     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+         <!-- Brand--> 
+         <a class="navbar-brand" href="index.html">
+           <img src="logo.png" width="350px" height="85px">
+         </a>
+       
+         <!-- Links -->
+         <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                 <a class="nav-link" href="index.html" id="navbardrop">
+                  Check Weather
+                 </a>
+
+             <li class="nav-item">
+                 <a class="nav-link" href="map.html" id="navbardrop" target="_blank"  >
+                  Map
+                 </a>
+                
+               </li>
+          
+          
+       
+           <!-- Dropdown -->
+           <li class="nav-item">
+             <a class="nav-link" href="signup.html" id="navbardrop" target="_blank" >
+               Sign up
+             </a>
+            
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="login.html" id="navbardrop" target="_blank">
+                 Log in
+               </a>
+             </li>
+                  
+           <li class="nav-item">
+               <a class="nav-link" href="contact.html" id="navbardrop" target="_blank">
+                 Contact Us
+               </a>
+              
+             </li>
+
+       
+         </ul>
+       </nav>
+       <section class="section">
+    <br> <br> <br> <br> <br> <br>  
+        
+   <center> <h1 id="text"><b>WEATHER AND CLIMATE INFORMATION</b></h1></center>
+    <center><h3 id="text2">Enter Your City Name: </h3><input type="text" id="value" width="80" height="80"></center>
+    <br>
+    
+   <center> <button onclick="weather()" class="button button3 btn btn-success">Get Your Details</button></center>
+    <div id="temp" style="margin-left:650px;margin-top:50px;color:blue;">  </div>
+    <div id="speed" style="margin-left:650px;margin-top:20px;color:blue;"></div>
+    <div id="humidity" style="margin-left:650px;margin-top:20px;color:blue;"></div> 
+    </section>
+    </body>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="weather.js"></script>
+</html>

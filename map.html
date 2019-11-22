@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather</title> 
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap">
+     <style>
+       .section{
+        background:url('background.jpeg') no-repeat;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.7;
+            background-size: cover;
+            position: relative;
+            
+       }
+       #text{
+           color:#000;
+       }
+       #text2{
+           color: cyan;
+       }
+    </style>
+   
+   </head>
+  <body>
+     <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top">
+         <!-- Brand--> 
+         <a class="navbar-brand" href="index.html">
+           <img src="logo.png" width="350px" height="85px">
+         </a>
+       
+         <!-- Links -->
+         <ul class="navbar-nav ml-auto">
+             <li class="nav-item">
+                 <a class="nav-link" href="index.html" id="navbardrop">
+                  Check Weather
+                 </a>
+                
+               </li>
+             <li class="nav-item">
+                 <a class="nav-link" href="map.html" id="navbardrop">
+                  Map
+                 </a>
+                
+               </li>
+         
+          
+       
+           <!-- Dropdown -->
+           <<li class="nav-item">
+             <a class="nav-link" href="signup.html" id="navbardrop">
+               Sign up
+             </a>
+            
+           </li>
+           <li class="nav-item">
+               <a class="nav-link" href="login.html" id="navbardrop" >
+                 Log in
+               </a>
+             </li>
+           <!-- <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+               Lighting 
+             </a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Wall lights</a>
+               <a class="dropdown-item" href="#">Ceiling lights</a>
+               <a class="dropdown-item" href="#">Outdoor lights</a>
+             </div>
+           </li>
+           <li class="nav-item dropdown">
+             <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Shop 
+             </a>
+             <div class="dropdown-menu">
+               <a class="dropdown-item" href="#">Cart</a>
+               <a class="dropdown-item" href="#">Wishlist</a>
+             </div>
+           </li> -->
+           <li class="nav-item">
+               <a class="nav-link" href="contact.html" id="navbardrop">
+                 Contact Us
+               </a>
+              
+             </li>
+           <li>
+           <form class="form-inline" action="/action_page.php">
+           <input class="form-control mr-sm-2" type="text" placeholder="Search">
+           <button class="btn btn-secondary" type="submit">Search</button>
+         </form>
+       </li>
+       
+         </ul>
+       </nav>
+       <section class="section">
+    <center><h1>World Map</h1></center>
+        <div id="googlemap" style="height: 500px; width:400px;margin-left:300px;"></div>
+        <script>
+
+                function myMap() {
+                var map= {
+                  center:new google.maps.LatLng(30.742249,76.733621),
+                  zoom:30,
+                };
+                var map = new google.maps.Map(document.getElementById("googlemap"),map);
+                }
+                </script>
+                
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC2LiYIaaq7tkuV53zUWtNgD6zgFmEiWx4&callback=myMap&callback=myMap"></script>
+                </section>
+                </body>
+                </
+
